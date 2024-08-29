@@ -8,28 +8,40 @@
     <title>実績解除ジェネレータ</title>
 </head>
 <body>
-    <div class="container" id="target">
-        <img src="img/bronze.png" alt="" class="trophy" id="trophy">
-            <div class="text_container">
-                <div class="title">実績を解除しました!</div>
-                <div class="achieve_text" id="achieve_text">テキストテキストテキストテキスト</div>
-            </div>
+    <div class="preview">プレビュー</div>
+    <div class="container">
+        <div class="target" id="target">
+            <img src="img/gold.png" alt="" class="trophy" id="trophy">
+                <div class="text_container">
+                    <div class="title">実績を解除しました!</div>
+                    <div class="achieve_text" id="achieve_text">実績がここに表示されます</div>
+                </div>
+        </div>
+    </div>
+
+    <div class="select">
+        <div class="select_text">トロフィーの色 </div>
+        <select id="select_trophy" >
+            <option value="gold">金</option>
+            <option value="silver">銀</option>
+            <option value="bronze">銅</option>
+        </select>
     </div>
 
     <form action="POST" id="form">
-
-        <input type="text" id="text_form">
+        <input type="text" id="text_form" placeholder="実績を入力">
     </form>
     <div class="button_set">
         <button type="button" id="submit">変更を適用</button>
-        <button type="button" id="save">画像として出力</button>
+        <button type="button" id="save">画像を出力</button>
     </div>
-    <div id="error">テキストが長すぎます</div>
+    <div id="error">実績が長すぎます</div>
 
     <div id="result"></div>
 
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.5/dist/html2canvas.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dom-to-image@2.6.0/dist/dom-to-image.min.js"></script>
 <script src="script.js"></script>
 </html>
