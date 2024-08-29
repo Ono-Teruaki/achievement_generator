@@ -73,10 +73,3 @@ document.getElementById("save").addEventListener("click", (async () => {
         result.appendChild(img)
     });
   }));
-// document.getElementById("save").addEventListener("click", (async () => {
-//     let result = document.getElementById("result")
-//     html2canvas(document.querySelector("#target")).then(canvas => {
-//         result.innerHTML = '';
-//         result.appendChild(canvas)
-//     });
-//   }));
