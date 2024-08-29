@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>実績解除ジェネレータ</title>
+</head>
+<body>
+    <div class="container" id="target">
+        <img src="img/bronze.png" alt="" class="trophy" id="trophy">
+            <div class="text_container">
+                <div class="title">実績を解除しました!</div>
+                <div class="achieve_text" id="achieve_text">テキストテキストテキストテキスト</div>
+            </div>
+    </div>
+
+    <form action="POST" id="form">
+
+        <input type="text" id="text_form">
+    </form>
+    <div class="button_set">
+        <button type="button" id="submit">変更を適用</button>
+        <button type="button" id="save">画像として出力</button>
+    </div>
+    <div id="error">テキストが長すぎます</div>
+
+    <div id="result"></div>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.5/dist/html2canvas.min.js"></script>
+<script src="script.js"></script>
+</html>
